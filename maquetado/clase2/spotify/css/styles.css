@@ -1,7 +1,10 @@
+html {
+   scroll-behavior: smooth;
+}
 body {
   font-family: Circular,Helvetica,Arial,sans-serif;
   font-size: 16px;
-  color: #f8f8f8;
+  color: #fafafa;
   background-color: #1c1e1f;
 }
 a {
@@ -10,4 +13,16 @@ a {
 
 a:hover {
   color: #1ed760;
+}
+
+ol.none{
+   list-style: none;
+}
+
+h1, h2,h3 {
+   color: #c0c0c0;
+}
+
+.fill-blue {
+   color: rgb(196, 238, 255);
 }
