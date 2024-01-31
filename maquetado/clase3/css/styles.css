@@ -1,0 +1,90 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+   background-color: #e3e3e3;
+   border: 1px solid #333;
+   border-radius: 5px;
+   padding: 1rem;
+   margin: 1rem;
+}
+
+/* selector para hijos y nietos */
+#sectionOne p {
+   color: blue;
+}
+
+/* selector directo solo para hijos, no incluye nietos*/
+#sectionTwo > p {
+   color: red;
+}
+
+#sectionBrother h2 ~ button {
+   border-radius: 5px;
+   padding: .25rem 1rem;
+   background-color: skyblue;
+   color: white;
+}
+
+#sectionAdjacentBrother h2 + h3 {
+   color: yellow;
+}
+
+#sectionChild .btn {
+   border-radius: 5px;
+   padding: .25rem 2rem;
+   background-color: #444;
+   color: white;
+}
+#sectionChild .btn:hover {
+   background-color: #000;
+}
+
+nav {
+   padding-bottom: 1rem;
+}
+
+nav ul li, nav ol li {
+   list-style: none;
+}
+
+a {
+   color: #444;
+   text-decoration: none;
+}
+a:hover {
+   color: black;
+   text-decoration: underline;
+}
+
+a[href="../index.html"] {
+   color: rgb(40, 90, 255);
+}
+
+.list {
+   background-color: darkgray;
+   border: 1px solid #000;
+   border-radius: 2px;
+   margin: .25rem;
+   padding: 0rem 1rem;
+}
+
+#list div:first-child {
+   background-color: #000;
+   color: white;
+}
+
+#list div:last-child {
+   background-color: rgb(245, 32, 32);
+   color: white;
+}
