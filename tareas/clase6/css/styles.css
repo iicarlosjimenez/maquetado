@@ -1,0 +1,86 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   color: #eee;
+   background-color: #222;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1, h2, h3 {
+   margin: 10px 0;
+   padding: 0 10px;
+   width: auto;
+}
+a {
+   color: #eee;
+   text-decoration: none;
+}
+aside li {
+   margin: 5px 0;
+   padding: 3px 5px;
+   border: 1px solid #eee;
+   border-radius: 5%;
+   background-color: #222;
+   list-style: none;
+}
+aside li:hover {
+   color: #222;
+   cursor: pointer;
+   background-color: #eee;
+}
+aside li:hover > a {
+   color: #222;
+}
+p {
+   margin: 10px 0;
+}
+span {
+   color: skyblue;
+}
+main h2 {
+   color: skyblue;
+   background-color: #222;
+}
+main li {
+   margin-left: 50px;
+}
+.container-flex {
+   display: flex;
+   flex-wrap: wrap;
+}
+.content-aside {
+   align-items: stretch;
+   flex-wrap: nowrap;
+   gap:0;
+   min-height: 100vh;
+}
+.content-aside aside {
+   display: none;
+   padding: 10px;
+   flex-grow: 1;
+   flex-basis: 150px;
+   border: 1px solid #eee;
+}
+.content-aside main {
+   flex-grow: 4;
+   padding: 10px;
+   border: 1px solid #eee;
+}
+.fixed {
+   position: fixed;
+}
+.sticky {
+   position: sticky;
+   top: 0;
+}
+.scroll {
+   overflow-y: scroll;
+}
+
+@media screen and (min-width: 600px) {
+   .content-aside aside  {
+      display: block;
+   }
+}
