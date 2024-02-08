@@ -1,0 +1,36 @@
+.post {
+   border-radius: $borderRound;
+   width: 80%;
+   max-width: 300px;
+   padding: $postSpacing;
+   background-color: $whiteColor;
+   @include flexColumnCenter();
+
+   img {
+      border-radius: $borderRound;
+
+      &:hover {
+         transform: scale(1.1);
+      }
+   }
+
+   .content {
+      @include flexColumnCenter();
+
+      p {
+         color: $blackColor;
+
+         span {
+            color: $blueColor;
+         }
+      }
+
+      button {
+         @include btnPost(blue);
+      }
+
+      .btn-transparent {
+         @include btnPost(transparent);
+      }
+   }
+}

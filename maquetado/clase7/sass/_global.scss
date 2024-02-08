@@ -1,0 +1,55 @@
+$blackColor: #222;
+$whiteColor: #eee;
+$blueColor: rgb(82, 191, 234);
+$postSpacing: 20px 20px 20px 20px;
+$borderRound: 5px;
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+@mixin flexColumnCenter() {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+@mixin flexRowCenter() {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+@mixin flexRowBetween() {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+
+@mixin btnPost($backColor) {
+   border-radius: $borderRound;
+   border: 1px solid $blackColor;
+   text-align: center;
+   padding: 5px;
+   background-color: $backColor;
+   color: white;
+}
+
+body {
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   background-color: $blackColor;
+   color: #eee;
+   @include flexColumnCenter();
+}
+
+h1 {
+   font-size: 2rem;
+}
+
+h2 {
+   font-size: 1.5rem;
+}

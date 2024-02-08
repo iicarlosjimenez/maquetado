@@ -1,0 +1,17 @@
+@import 'global';
+@import 'nav';
+@import 'hero';
+@import 'post';
+
+section {
+   width: 100%;
+   @include flexColumnCenter();
+}
+
+.row-center {
+   @include flexRowCenter()
+}
+
+.row-between {
+   @include flexRowBetween()
+}

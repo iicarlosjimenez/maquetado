@@ -1,0 +1,18 @@
+#hero {
+   height: 100vh;
+   background-image: url('../img/hero.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   article {
+      border-radius: $borderRound;
+      padding: 1rem 5rem;
+      // color: $blackColor;
+      // background-color: rgb(224, 224, 224, .8);
+      @include flexColumnCenter();
+
+      h1 {
+         font-size: 3rem;
+      }
+   }
+}
