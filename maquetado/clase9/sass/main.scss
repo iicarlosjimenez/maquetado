@@ -1,0 +1,30 @@
+@import 'font';
+
+@mixin backCover() {
+   background-size: cover;
+   background-position: center;
+   height: 100%;
+   position: relative;
+}
+
+body {
+   @include poppins-regular();
+}
+
+button.btn {
+   border-radius: 70px;
+   padding-left: 35px;
+   padding-right: 35px;
+}
+
+.vh-50 {
+   height: 50vh;
+}
+
+.vh-90 {
+   height: 90vh;
+}
+
+.back-image {
+   @include backCover();
+}
